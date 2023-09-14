@@ -1,0 +1,201 @@
+/* Reset some default styles */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Monoton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Set a background color and font styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    background-image: url('picture1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+    background-color: #3333339f;
+    color: #fff;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url('CurlyCode.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: palevioletred;
+}
+
+/* Hero Section Styles */
+.hero {
+    
+
+    text-align: center;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 3px #000000;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-shadow: 0px 3px 3px #000000;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(0, 230, 230);
+    color:#ffffff;
+    text-shadow: 0px 2px 2px #4e7e91;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: color 0.9s ease;
+    transition: background-color 0.3s ease;
+    
+}
+
+.cta-button:hover {
+    background-color: rgba(0, 163, 163, 0.425);
+    color: rgba(255, 255, 255, 0.432);
+}
+
+/* Feature Section Styles */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.151);
+}
+
+.feature {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Call-to-Action Section Styles */
+.cta {
+    text-align: center;
+    padding: 80px 0;
+    background-color: rgb(0, 150, 150);
+    color: white;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 2px #295668;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-shadow: 0px 4px 2px #295668;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #33333377;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    background-image: url('CurlyCode.png');    
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-nav {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-shadow: 0px 4px 2px #295668;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+}
