@@ -1,0 +1,231 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    transition: all 700ms ease-in-out;
+}
+
+/* Set a background color and font styles */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    background-image: url('Assets/wallpaperBing.jfif');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+/* Header Styles */
+header {
+    background-color: #333333c0;
+    color: #fff;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url('Assets/CurlyCode.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 15px;
+    border: #000000;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 3px 3px 2px rgb(19, 5, 5);
+    transition: all 500ms ease-in-out;
+}
+
+.nav-links a:hover {
+    color: rgb(165, 165, 165);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+/* Hero Section Styles */
+.hero {
+    
+    text-shadow: 0px 4px 3px #00000083;
+    text-align: center;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 5px 4px 2px #00000083;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgb(0, 230, 230);
+    color:#ffffff;
+    text-shadow: 0px 2px 3px #1c313a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 6px 5px rgb(0, 63, 63);
+    
+}
+
+.cta-button:hover {
+    background-color: rgb(0, 200, 200);
+    color: rgba(255, 255, 255, 0.432);
+    box-shadow: 0px 0px 0px rgb(36, 36, 36);
+    text-shadow: 0px 1px 1px #152329c7;
+    color:#ffffff;
+}
+
+/* Feature Section Styles */
+.features {
+    display: flex;
+    justify-content: space-between;
+    image-orientation:initial;
+
+    padding: 40px;
+    background-color: #cacacab9;
+}
+
+.feature0 {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffffffb0;
+    box-shadow: 3px 7px 3px rgba(0, 109, 109, 0.70);
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.feature1 {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffffffb0;
+    box-shadow: 0px 7px 3px rgba(0, 109, 109, 0.70);
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.feature2 {
+    flex-basis: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffffffb0;
+    box-shadow: -3px 7px 3px rgba(0, 109, 109, 0.70);
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+}
+
+/* Call-to-Action Section Styles */
+.cta {
+    text-align: center;
+    padding: 80px 0;
+    background-color: rgb(0, 160, 160);
+    color: white;
+    box-shadow:inset 0px 7px 6px rgba(0, 41, 41, 0.712);
+    text-shadow: 0px 4px 2px rgba(0, 77, 77, 0.664);
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Footer Styles */
+footer {
+    font-size: small;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    width: auto;
+    margin: auto;
+    height: 150px;
+    box-shadow:inset 0px 7px 6px rgba(0, 0, 0, 0.596)
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url('Assets/CurlyCode.png');     
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-nav {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+}
